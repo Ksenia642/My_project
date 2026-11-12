@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="14 задач по C#: решения, блок-схемы и тесты.">
+  <title>Мои задачи по C#</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav"><a class="brand" href="#"><span class="brand-mark">C#</span> Мои задачи</a><span class="nav-note">Практика программирования</span></nav>
+    <div class="hero-content">
+      <div class="eyebrow"><span></span> УЧЕБНЫЙ ПРОЕКТ</div>
+      <h1>Мои задачи<br><em>по C#</em></h1>
+      <p class="hero-copy">14 практических заданий с готовыми решениями, блок-схемами и проверочными тестами.</p>
+      <a class="hero-link" href="#tasks">Смотреть задания <span>↓</span></a>
+    </div>
+    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    <div class="hero-code"><span>if</span> (condition)<br>&nbsp;&nbsp;Console.WriteLine(<b>"Hello!"</b>);</div>
+  </header>
+
+  <main id="tasks" class="container">
+    <section class="intro">
+      <div><div class="eyebrow dark"><span></span> КОЛЛЕКЦИЯ ЗАДАНИЙ</div><h2>От условия <em>к решению</em></h2></div>
+      <p>Выберите задачу, изучите алгоритм и скопируйте код для запуска в Visual Studio или .NET CLI.</p>
+    </section>
+    <section class="toolbar">
+      <div class="filters" role="group" aria-label="Фильтр заданий">
+        <button class="filter active" data-filter="Все">Все <b>14</b></button>
+        <button class="filter" data-filter="Основные">Основные <b>10</b></button>
+        <button class="filter" data-filter="Дополнительные">Дополнительные <b>4</b></button>
+      </div>
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Найти задачу..."></label>
+    </section>
+    <div class="results-line"><span id="count">14 заданий</span><span>РЕШЕНИЯ НА C#</span></div>
+    <section id="task-list" class="task-list"></section>
+    <section class="bottom-note"><div class="note-icon">⌘</div><div><h3>Как запустить решение?</h3><p>Создайте консольный проект .NET, вставьте код нужной задачи в Program.cs и запустите его. Для ввода нескольких чисел используйте пробел между значениями.</p></div></section>
+  </main>
+  <footer><span class="brand"><span class="brand-mark">C#</span> Мои задачи</span><span>Учебный проект · 2026</span><a href="https://github.com/">GitHub</a></footer>
+  <script src="tasks.js"></script><script src="app.js"></script>
+</body>
+</html>
